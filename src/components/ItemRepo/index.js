@@ -2,13 +2,13 @@ import React from "react";
 
 import { ItemContainer } from './styles';
 
-function ItemRepo() {
+function ItemRepo({ repo }) {
   return (
     <ItemContainer>
-        <h3>Lucas</h3>
-        <p>unip/lucas</p>
-        <a href="#">Ver repositórios</a><br />
-        <a href="#" className="remover">Remover</a>
+        <h3>{ repo.name }</h3>
+        <p>{ repo.full_name }</p>
+        <a href={ repo.html_url } rel="noreferrer" target="_blank">Ver repositórios</a><br />
+        <a href="/" rel="noreferrer" className="remover">Remover</a>
         <hr />
     </ItemContainer>
   );

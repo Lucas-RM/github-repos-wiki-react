@@ -12,4 +12,8 @@ export const Container = styled.div`
     align-items: center;
     justify-content: flex-start;
 
+    .itens-repositorios {
+        width: 80%;
+    }
+
 `
